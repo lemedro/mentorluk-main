@@ -1,13 +1,14 @@
 {
 	"name": "mentorluk-main",
 	"version": "1.0.0",
-	"main": "index.js",
+	"source": "src/index.html",
 	"license": "MIT",
 	"scripts": {
 		"start": "parcel",
-		"build": "parcel build"
+		"build": "parcel build "
 	},
 	"devDependencies": {
+		"@parcel/transformer-sass": "2.8.1",
 		"parcel": "^2.8.1"
 	}
 }

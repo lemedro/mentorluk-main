@@ -2,6 +2,9 @@
 /* Navy - #223242 */
 /* Sarı - #FDD781 */
 
+$navy: #223242;
+$sari: #fdd781;
+
 *,
 ::before,
 ::after {
@@ -14,7 +17,7 @@ body {
 	/* background-image: url('../assets/ytu.jpg'); */
 	height: 100vh;
 	object-fit: cover;
-	background-color: black;
+	background-color: $navy;
 }
 
 .container {
@@ -26,19 +29,32 @@ body {
 .contents {
 	width: 100%;
 	height: 100%;
-	background-color: red;
+	// background-color: red;
 }
 
 .sidebar {
 	width: 6rem;
-	background-color: #223242;
+	background-color: $navy;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	#icon {
+		color: $sari;
+		border: none;
+		background-color: transparent;
+	}
 }
 
-.sidebar #icon {
-	color: white;
-	border: none;
-	background-color: transparent;
+.landing-page {
+	.kulup-logosu {
+	}
+	#ytu-text {
+	}
+	#mentorluk-text {
+	}
+}
+
+.landing-page {
+	color: red;
 }
