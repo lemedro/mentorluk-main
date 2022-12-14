@@ -1,0 +1,13 @@
+{
+	"name": "mentorluk-main",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"scripts": {
+		"start": "parcel",
+		"build": "parcel build"
+	},
+	"devDependencies": {
+		"parcel": "^2.8.1"
+	}
+}
