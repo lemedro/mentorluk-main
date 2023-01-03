@@ -133,6 +133,13 @@ body {
 				display: flex;
 				flex-direction: row;
 				flex-grow: 1;
+
+				.bir {
+					width: 50%;
+				}
+				.iki {
+					width: 50%;
+				}
 			}
 		}
 	}
