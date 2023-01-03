@@ -2,8 +2,11 @@
 /* Navy - #223242 */
 /* Sarı - #FDD781 */
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 $navy: #223242;
 $sari: #fdd781;
+$white: #fff;
 
 *,
 ::before,
@@ -11,6 +14,8 @@ $sari: #fdd781;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	color: $navy;
 }
 
 body {
@@ -47,14 +52,112 @@ body {
 }
 
 .landing-page {
+	position: relative;
+	// background-color: red;
+	background-image: url('../assets/manzara.jpg');
+	background-position: 60%, 100%;
+	background-size: cover;
+	// filter: opacity(0.7);
 	.kulup-logosu {
+		position: absolute;
+		left: 5vw;
+		top: 8vh;
 	}
-	#ytu-text {
-	}
-	#mentorluk-text {
+
+	.headings {
+		position: absolute;
+		left: 5vw;
+		bottom: 8vh;
+
+		font-family: sans-serif;
+
+		#ytu-text {
+			color: $white;
+			font-size: 3rem;
+		}
+		#mentorluk-text {
+			color: $sari;
+			font-size: 5rem;
+		}
 	}
 }
 
-.landing-page {
-	color: red;
+.duyurular-istatistikler {
+	background-color: blue;
+
+	.duyurular {
+		height: 65%;
+		background-color: white;
+		display: flex;
+
+		.buyuk {
+			width: 56%;
+			background-color: red;
+			background-image: url('../assets/toplu_resim.jpg');
+			background-size: cover;
+			background-position: 50% 50%;
+		}
+
+		// .buyuk::before {
+		// 	content: '';
+		// }
+
+		.kucuk {
+			width: 44%;
+
+			.duyuru-header {
+				height: 50%;
+				background-color: $sari;
+				position: relative;
+
+				display: flex;
+
+				justify-content: center;
+				align-items: center;
+
+				h1 {
+					font-size: 4rem;
+					font-weight: 800;
+				}
+
+				a {
+					position: absolute;
+					right: 20;
+					bottom: 20;
+				}
+			}
+
+			.kucuk-duyurular {
+				height: 50%;
+				background-color: $navy;
+				display: flex;
+				flex-direction: row;
+				flex-grow: 1;
+			}
+		}
+	}
+	.istatistikler {
+		height: 35%;
+		background-color: black;
+	}
+}
+
+.biz-kimiz {
+	background-color: yellow;
+}
+
+.etkinlikler {
+	background-color: green;
+}
+
+.yorumlar {
+	background-color: aquamarine;
+}
+
+.footer {
+	background-color: chocolate;
+}
+
+.page {
+	height: 100vh;
 }
